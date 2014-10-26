@@ -1,8 +1,20 @@
-<html>
+<html ng-app='store'>
 <head>
-  <title></title>
+  <style type="text/css" href="bootstrap.min.css"></style>
+  <title>Testing Angular</title>
 </head>
-<body>
+<body ng-controller="StoreController as store">
+  <script type="text/javascript" src="angular.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+
+  <ul class='list-group'>
+    <li class='list-group-item' ng-repeat='product in store.products'>
+      <h3>
+        {{ product.name }}
+        <em class='pull-right'>{{ product.price | currency }}</em>
+      </h3>
+    </li>
+  </ul>
 
 </body>
 </html>
