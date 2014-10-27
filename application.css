@@ -1,3 +1,7 @@
+body {
+  width: 800px;
+  clear: both;
+}
 .ng-invalid.ng-dirty {
   border-color: red;
 }
